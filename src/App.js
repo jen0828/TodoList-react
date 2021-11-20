@@ -1,15 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Banner from './components/Banner/Banner';
 import { Switch, Route } from "react-router-dom"
-
 
 function App() {
   return (
     <div className="App">
-    
-    <Switch>
-  
-    </Switch>
+      <Banner />
+      <Switch>
+        
+      </Switch>
     </div>
   );
 }

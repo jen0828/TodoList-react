@@ -1,0 +1,9 @@
+.banner {
+  height: 35vh;
+  background-position: center;
+}
+
+.banner-img {
+  height: 100%;
+  width: 100%;
+}
