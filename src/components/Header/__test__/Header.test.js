@@ -18,3 +18,9 @@ it ('should render same text passed into title prop', async () => {
   const headingElement = screen.getByTitle("Header");
   expect(headingElement).toBeInTheDocument();
 });
+
+it ('should render same text passed into title prop', async () => {
+  render(<Header title="My Header"/>);
+  const headingElement = await screen.findByText(/my header/i);
+  expect(headingElement).toBeInTheDocument();
+});
