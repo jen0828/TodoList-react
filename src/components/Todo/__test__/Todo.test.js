@@ -17,4 +17,11 @@ describe("Todo", () => {
     const divElement = screen.getByText(/Practise React/i)
     expect(divElement).toBeInTheDocument()
   });
+
+  it('should show three tasks', async () => {
+    render(<Todo />);
+    addTask(["Practise React", "Go for a stroll", "Read a book"])
+    const divElements = screen.getAllByTestId("task-container")
+    expect(divElements.length).toBe(3)
+  });
 });
