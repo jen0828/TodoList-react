@@ -18,7 +18,7 @@ describe("Todo", () => {
     expect(divElement).toBeInTheDocument()
   });
 
-  it('should show three tasks', async () => {
+  it('should render multiple tasks', async () => {
     render(<Todo />);
     addTask(["Practise React", "Go for a stroll", "Read a book"])
     const divElements = screen.getAllByTestId("task-container")
