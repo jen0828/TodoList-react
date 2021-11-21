@@ -7,3 +7,8 @@ it ('should render same text passed into title prop', async () => {
   expect(headingElement).toBeInTheDocument();
 });
 
+it ('should render same text passed into title prop', async () => {
+  render(<Header title="My Header"/>);
+  const headingElement = screen.getByRole("heading");
+  expect(headingElement).toBeInTheDocument();
+});
