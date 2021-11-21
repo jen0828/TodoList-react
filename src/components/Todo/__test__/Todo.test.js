@@ -30,6 +30,14 @@ describe("Todo", () => {
     addTask(["Go to gym"])
     const divElement = screen.getByText(/Go to gym/i);
     expect(divElement).not.toHaveClass("todo-item-active")
-});
+  });
+
+  it('task should have completed class when clicked', () => {
+    render(<Todo />);
+    addTask(["Go to gym"])
+    const divElement = screen.getByText(/Go to gym/i);
+    fireEvent.click(divElement)
+    expect(divElement).toHaveClass("todo-item-active")
+  });
 
 });
