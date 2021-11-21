@@ -26,3 +26,17 @@ it('should be able to type into input', () => {
   fireEvent.change(inputElement, { target: { value: "Practise React" } })
   expect(inputElement.value).toBe("Practise React");
 });
+
+it('should have empty input when add button is cliked', () => {
+  render(
+      <AddInput 
+          todos={[]}
+          setTodos={mockedSetTodo}
+      />
+  );
+  const inputElement = screen.getByPlaceholderText(/Add a new task here.../i);
+  fireEvent.change(inputElement, { target: { value: "Practise React" } });
+  const buttonElement = screen.getByRole("button", { name: /Add/i});
+  fireEvent.click(buttonElement)
+  expect(inputElement.value).toBe("")
+});
