@@ -24,4 +24,12 @@ describe("Todo", () => {
     const divElements = screen.getAllByTestId("task-container")
     expect(divElements.length).toBe(3)
   });
+
+  it('task should not have complete class when initally rendered', () => {
+    render(<Todo />);
+    addTask(["Go to gym"])
+    const divElement = screen.getByText(/Go to gym/i);
+    expect(divElement).not.toHaveClass("todo-item-active")
+});
+
 });
