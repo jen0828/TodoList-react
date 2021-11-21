@@ -23,6 +23,6 @@ it('should be able to type into input', () => {
   );
   const inputElement = screen.getByPlaceholderText(/Add a new task here.../i);
   fireEvent.click(inputElement)
-  fireEvent.change(inputElement, { target: { value: "Practice React" } })
-  expect(inputElement.value).toBe("Practice React");
+  fireEvent.change(inputElement, { target: { value: "Practise React" } })
+  expect(inputElement.value).toBe("Practise React");
 });
