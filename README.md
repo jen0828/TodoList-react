@@ -26,4 +26,4 @@ $ npm test
 
 ## Live on Netlify
 
- Click here : https://jens-todo-app.netlify.app/
+ Click here : https://jens-todo.netlify.app/
