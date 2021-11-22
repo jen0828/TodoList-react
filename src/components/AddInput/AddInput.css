@@ -9,6 +9,14 @@
   width: 50%;
 }
 
+@media screen and (max-width: 375px) {
+  .input-container{
+    margin-top: 6rem;
+    width: 70%;
+  }
+}
+
+
 .input {
   border: none;
   width: 90%
