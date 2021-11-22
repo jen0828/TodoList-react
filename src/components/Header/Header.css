@@ -6,7 +6,7 @@
   text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.342);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   h1.header {
     font-size: 3rem;
   }

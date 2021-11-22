@@ -9,7 +9,7 @@
   width: 50%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .input-container{
     margin-top: 6rem;
     width: 70%;
