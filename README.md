@@ -23,3 +23,7 @@ $ npm start
 ``` shell
 $ npm test
 ```
+
+## Live on Netlify
+
+ Click here : https://jens-todo-app.netlify.app/
