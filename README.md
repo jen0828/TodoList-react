@@ -23,6 +23,10 @@ $ npm start
 ``` shell
 $ npm test
 ```
+## Screenshot ( Mobile view)
+
+![Screenshot 2021-11-22 at 14 21 33](https://user-images.githubusercontent.com/79845719/142878369-8f3b6aff-78ad-4b7c-abba-1f463f952091.png)
+
 
 ## Live on Netlify
 
