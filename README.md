@@ -25,7 +25,7 @@ $ npm test
 ```
 ## Screenshot ( Mobile view)
 
-![Screenshot 2021-11-22 at 14 45 37](https://user-images.githubusercontent.com/79845719/142882032-6e44f966-a389-41bb-80de-89afe9b2ed06.png)
+![IMG_3060](https://user-images.githubusercontent.com/79845719/143057792-d08d3557-4b3f-4f84-97b4-e6cb1e9f6c2c.jpg)
 
 
 ## Live on Netlify
