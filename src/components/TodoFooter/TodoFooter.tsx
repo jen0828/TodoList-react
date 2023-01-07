@@ -4,7 +4,7 @@ import './TodoFooter.css';
 function TodoFooter({
   numberOfIncompleteTasks,
 }: {
-  numberOfIncompleteTasks: number | string;
+  numberOfIncompleteTasks: number;
 }) {
   return (
     <div className="todo-footer">
