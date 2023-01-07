@@ -6,9 +6,7 @@ import './Todo.css';
 import { TodoType } from '../../TodoType';
 
 function Todo() {
-  const [todos, setTodos] = useState<
-    (TodoType | { id: string; task: string; completed: boolean })[]
-  >([]);
+  const [todos, setTodos] = useState<TodoType[]>([]);
 
   return (
     <div className="todo">
