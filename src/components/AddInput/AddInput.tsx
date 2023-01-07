@@ -5,11 +5,7 @@ import { TodoType } from '../../TodoType';
 
 export interface Props {
   todos: TodoType[];
-  setTodos: React.Dispatch<
-    React.SetStateAction<
-      (TodoType | { id: string; task: string; completed: boolean })[]
-    >
-  >;
+  setTodos: React.Dispatch<React.SetStateAction<TodoType[]>>;
 }
 
 function AddInput({ setTodos, todos }: Props) {
