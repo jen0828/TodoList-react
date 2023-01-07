@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import "./AddInput.css"
 import { v4 } from "uuid"
+import { TodoType } from '../../TodoType';
 
-interface Props{
-  todos: {}[];
-  setTodos: React.Dispatch<React.SetStateAction<{}[]>>;
+export interface Props{
+  todos: TodoType[];
+  setTodos: React.Dispatch<React.SetStateAction<(TodoType | { id: string; task: string; completed: boolean; })[]
+>>;
 }
+
 
 function AddInput({
     setTodos, todos

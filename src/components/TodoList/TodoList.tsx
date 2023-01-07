@@ -1,10 +1,13 @@
 import React from 'react'
 import TodoFooter from '../TodoFooter/TodoFooter'
 import "./TodoList.css"
+import { Props } from '../AddInput/AddInput'
+import { TodoType } from '../../TodoType'
+
 
 function TodoList({
     todos, setTodos
-}) {
+}: Props) {
 
     const updateTask = (id) => {
         let updatedTasks = todos.map((todo) => {
