@@ -2,10 +2,14 @@ import React, { useState } from 'react'
 import "./AddInput.css"
 import { v4 } from "uuid"
 
+interface Props{
+  todos: {}[];
+  setTodos: React.Dispatch<React.SetStateAction<{}[]>>;
+}
 
 function AddInput({
     setTodos, todos
-}) {
+}: Props) {
 
     const [todo, setTodo] = useState("")
 
