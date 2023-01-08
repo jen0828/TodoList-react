@@ -32,7 +32,7 @@ function AddInput({ setTodos, todos }: Props) {
         onChange={(e) => setTodo(e.target.value)}
         placeholder="Add a new task here..."
       />
-      <button className="add-btn" onClick={addTodo}>
+      <button disabled={todo === ''} className="add-btn" onClick={addTodo}>
         Add
       </button>
     </div>
